@@ -15,6 +15,7 @@ def dual_frame(L=10, N=4, s=0.2):
         for k_1 in range(0, n + 1):  # degree on t_1
             k_2 = n - k_1  # degree on t_2
             M.append(np.ravel(t_1) ** k_1 * np.ravel(t_2) ** k_2)
+            #M.append(np.ravel(t_1) * np.ravel(t_2))
     
     M = np.array(M).T  # Convert from list to numpy array and transpose for column vec
     
